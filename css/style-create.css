@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, #9f12c2, #0066ff);  
+    justify-content: space-between;
+ 
+}
+
+footer {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px;
+}
+
+table a {
+    margin-right: 15px;
+}
+
+header {
+    background-color: #6b4ebd;
+    color: #ffffff;
+    padding: 4em 0;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    height: 480px;    
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+h2 {
+    color: #ffffff;
+    text-align: center;
+    height: 5vb;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.wrapper {
+    background-color: #9a7efc;
+    box-shadow: 0 4px 8px #252835;
+    border-radius: 15px;
+    padding: 2em;
+    max-width: fit-content;
+    min-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="date"] {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+}
+
+button {
+    display: inline-block;
+    background-color: #c729bf;
+    color: #ffffff;
+    padding: 0.75em 1.5em;
+    margin-top: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
