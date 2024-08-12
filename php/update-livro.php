@@ -27,12 +27,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 <body>
     <header>
-        <h1>Bem-vindo ao Sistema de Gerenciamento de Livros</h1>
+        <h1>Bem-vindo ao Sistema de Gerenciamento de Livros</h1><br>
         <nav>
             <ul>
-                <li><a href="../index.php">Home</a></li>
-                <li><a href="read-livro.php">Listar Livros</a></li>
-                <li><a href="create-livro.php">Adicionar Livro</a></li>
+                <li><a href="../index.php" class="btn">Home</a></li>
+                <li><a href="read-livro.php" class="btn">Listar Livros</a></li>
+                <li><a href="create-livro.php" class="btn">Adicionar Livro</a></li>
             </ul>
         </nav>
     </header>
@@ -42,14 +42,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <h2>Editar livro</h2>
             <form method="POST">
                 <label for="titulo">Titulo:</label>
-                <input type="text" id="titulo" name="titulo" value="<?= $livro['titulo'] ?>" required>
+                <input type="text" id="titulo" name="titulo" required> <br>
                 <label for="autor">Autor:</label>
-                <input type="text" id="autor" name="autor" value="<?= $livro['autor'] ?>" required>
+                <input type="text" id="autor" name="autor" required> <br>
                 <label for="data_lancamento">Data de Lançamento:</label>
-                <input type="date" id="data_lancamento" name="data_lancamento" value="<?= $livro['data_lancamento'] ?>" required>
+                <input type="date" id="data_lancamento" name="data_lancamento" required><br>
                 <label for="editora">Editora:</label>
-                <input type="editora" id="editora" name="editora" value="<?= $livro['editora'] ?>" required>
-                <br>
+                <input type="text" id="editora" name="editora" required> <br>
                 <button type="submit">Atualizar</button>
             </form>
         </div>
@@ -66,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     const addButton = document.querySelector('button[type="submit"]');
         addButton.addEventListener('mouseover', function() {
-        this.style.backgroundColor = '#8a0077';
+        this.style.backgroundColor = '#0066ff';
         });
 
         addButton.addEventListener('mouseout', function() {
